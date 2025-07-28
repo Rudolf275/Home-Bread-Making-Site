@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home Bread Making</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; 
+            padding: 0;
+            background-color: #f8f3e6;
+        }
+        header {
+            background-color: #d2691e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #a0522d;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #8b4513;
+        }
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #8b4513;
+        }
+        .recipe {
+            background-color: #fffaf0;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        /* Gallery styles */
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        #gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #d2691e;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        #gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        footer {
+            background-color: #d2691e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: auto;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #8b4513;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #a0522d;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Home Bread Making</h1>
+    <p>Learn how to make delicious bread at home!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#recipes">Recipes</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#tips">Tips & Tricks</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Home Bread Making</h2>
+    <p>Making your own bread at home is a rewarding experience. Whether you're a beginner or an experienced baker, you'll find tips and recipes here to help you bake fresh, tasty bread anytime.</p>
+</section>
+
+<section id="recipes">
+    <h2>Favorite Bread Recipes</h2>
+    
+    <div class="recipe">
+        <h3>Basic Bread</h3>
+        <p><strong>Ingredients:</strong> Flour, water, yeast, salt</p>
+        <p><strong>Steps:</strong> Mix ingredients, knead dough, let rise, shape, bake at 375°F for 30 minutes.</p>
+    </div>
+    
+    <div class="recipe">
+        <h3>Sourdough Bread</h3>
+        <p><strong>Ingredients:</strong> Flour, water, sourdough starter, salt</p>
+        <p><strong>Steps:</strong> Prepare starter, mix dough, ferment, shape, bake at 450°F for 40 minutes.</p>
+    </div>
+    
+    <div class="recipe">
+        <h3>Whole Wheat Bread</h3>
+        <p><strong>Ingredients:</strong> Whole wheat flour, water, yeast, honey, salt</p>
+        <p><strong>Steps:</strong> Mix, knead, let rise, shape, bake at 230 Grad Celsius for 60 minutes.</p>
+    </div>
+</section>
+
+<!-- New Gallery Section -->
+<section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div id="gallery">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Freshly baked bread 1" />
+        <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Homemade bread loaf" />
+        <img src="https://images.unsplash.com/photo-1606788075761-4e4f9f985f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bread dough rising" />
+        <img src="https://images.unsplash.com/photo-1617196039707-4bb3f9b6a2b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sourdough bread" />
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bread baking in oven" />
+        <img src="https://images.unsplash.com/photo-1603225816024-7b9b2d07b2a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Crusty bread" />
+    </div>
+</section>
+
+<section id="tips">
+    <h2>Tips & Tricks for Perfect Bread</h2>
+    <ul>
+        <li>Always measure ingredients accurately.</li>
+        <li>Use fresh yeast for better rise.</li>
+        <li>Ensure your dough is kneaded well for a good texture.</li>
+        <li>Let the dough rise in a warm, draft-free area.</li>
+        <li>Bake on a preheated baking stone or tray for a crispy crust.</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to share your bread baking experience? Fill out the form below:</p>
+    <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Home Bread Making. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
